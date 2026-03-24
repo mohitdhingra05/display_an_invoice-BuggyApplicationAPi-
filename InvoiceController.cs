@@ -32,5 +32,9 @@ namespace BuggyApp.Controllers
             var result = _context.Invoice.Insert(item);
         }
 
+        public void GetInvoicefromDB(Items item)
+        {
+            var result = _context.Invoice.Get(item);
+        }
     }
 }
