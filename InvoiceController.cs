@@ -16,7 +16,7 @@ namespace BuggyApp.Controllers
             if (items != null)
             {
                 return Ok(items);
-                InsertInvoicetoDB(items);
+                GetInvoicefromDB(items);
             }
             return NotFound("No invoice found");
         }
